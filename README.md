@@ -1,15 +1,15 @@
-# ⚙️***OrangeHRM Demo Website - End-to-End Testing Project***-
-![Screenshot 2025-03-24 110255](https://github.com/user-attachments/assets/36ba2ee6-e6f9-4692-ad6c-46f328915e19)
+# ⚙️***Automation Test Store  Demo Website - End-to-End Testing Project***-
+![Screenshot 2025-03-24 110255]()
 <br>
-URL:- [OrangeHRM-Demo](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
+URL:- [Automation Test Store](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
 
 ### 📌 ***Overview***
 
-This project focuses on end-to-end testing of the OrangeHRM demo website, covering both manual testing and Cypress automation. The objective is to ensure the website functions as expected across various modules, providing a smooth and reliable user experience.
+This project focuses on end-to-end testing of the Automation Test Store demo website, covering both manual testing and Cypress automation. The objective is to ensure the website functions as expected across various modules, providing a smooth and reliable user experience.
 
 ### 🎯 ***Objective***
 
-- Validate core functionalities of the OrangeHRM demo website
+- Validate core functionalities of the Automation Test Store demo website
 - Perform manual testing to ensure feature completeness and user flow accuracy
 - Implement Cypress automation to improve test efficiency and reusability
 
@@ -67,11 +67,14 @@ This project focuses on end-to-end testing of the OrangeHRM demo website, coveri
 ### 🔹 ***4. Test Scenarios & Test Cases***
 
   - Designed high-level scenarios covering:
-    - Login
-    - Dashboard
-    - PIM
-    - Leave
-    - Admin modules
+    - Login functionality/Signup
+    -Product search and filtering
+    -Add products to the cart ,change quantity and apply some filters.
+    -Wishlist
+    -Navigating between different pages
+    -Checkout
+    -Contact us
+    -Also Check for footer  sections links
 
 - Detailed test cases include:
     - Clear steps
@@ -94,13 +97,10 @@ This project focuses on end-to-end testing of the OrangeHRM demo website, coveri
     - Module-level pass/fail status
  
 ### 📘 ***Documents***
-1. [Test Plan](https://docs.google.com/document/d/1jW2MNoxhKw3z4FhTaYVMKSVonxVsAUHttTfZng54I4E/edit?usp=drive_link)
-2. [Test Plan- X-MindMap](https://drive.google.com/file/d/1y8ESogtrtCn1ZGOnqVlDYYrG-tm4CzT5/view?usp=drive_link)
-3. [Requirements Traceability Matrix](https://docs.google.com/document/d/1fnXlupH7lkOThfcBNztFod7ddWG2-BSjq598PfjYVys/edit?usp=drive_link)
-4. [Test Scenarios and Tets Cases](https://docs.google.com/spreadsheets/d/1AHWV_AJR5QWyoYelLIc_OIOO-FnF7jYR/edit?usp=drive_link&ouid=105267886432594241208&rtpof=true&sd=true)
-5. [Test Execution Report](https://docs.google.com/document/d/1DAoBeZT1oPYKD8eE96Qkzudj2Jq25UnRNaQsGzPtjEE/edit?usp=drive_link)
-6. [Bug Report](https://docs.google.com/spreadsheets/d/1SxHQCopCn9sxKwWhI4rFqyrrXu-QdUBpldXY68d3aRE/edit?usp=drive_link)
-7. [Bug Summary Report](https://docs.google.com/document/d/1DWc1EiT5k4TCSCFPD-SbtRWVr0NJjxrPhenQ0BBK3qA/edit?usp=drive_link)
+1. [Test Plan](https://docs.google.com/document/d/1rRD0PfCsO85cUN0X_FCaQ3RYvbSfG7hk9luNNFTCG_4/edit?tab=t.0)
+2. [Test Plan- X-MindMap](https://docs.google.com/document/d/1judVW-Zq0tRpceqPUBsAID_43peCXq5BpgCkLNPMLEg/edit?tab=t.0)
+3. [Test Scenarios and Tets Cases](https://docs.google.com/spreadsheets/d/1kglHMJ70QSxZpr8PmGXR87dwx6hLf8riR7NMYuIymxI/edit?gid=1135018006#gid=1135018006)
+4. [Bug Report](
 ---
 
 ## 🤖 ***AUTOMATION TESTING***
@@ -138,20 +138,20 @@ This project focuses on end-to-end testing of the OrangeHRM demo website, coveri
       │
       ├── 📁 cypress
       │   ├── 📁 e2e
-      │   │   └── orangeHRMTest.cy.js
+      │   │   └── POMauto.js
       │   │
       │   ├── 📁 support
       │   │   ├── commands.js
       │   │   └── e2e.js
       │   │
-      │   └── 📁 pageObjects
-      │       ├── loginPage.js
-      │       ├── dashboardPage.js
-      │       ├── pimPage.js
-      │       ├── leavePage.js
-      │       ├── adminPage.js
-      │       ├── timePage.js
-      │       └── navigationPage.js
+      │   └── 📁 POM_Framework
+      │       ├── Addtocart.js
+      │       ├── Checkout.js
+      │       ├── Contactus.js
+      │       ├── Footer.js
+      │       ├── LoginAuto.js
+      │       ├── Navigation.js
+      │       └── Productfiltering .js
       │
       └── cypress.config.js
 
@@ -191,25 +191,17 @@ This project focuses on end-to-end testing of the OrangeHRM demo website, coveri
  
 ### 🏅 ***Conclusion***
 
-The project successfully validated core functionalities of the OrangeHRM demo site. The manual testing phase ensured all features worked as intended, while the Cypress automation framework improved testing speed, consistency, and reusability.
-
-This project demonstrates a complete testing lifecycle — from planning and execution to reporting — highlighting both manual testing skills and Cypress automation expertise.
-- File Extensions Used
-- Test Plan Document: ```.docx / .pdf```
-- Test Scenarios & Cases: ```.xlsx / .csv```
-- Bug Reports: ```.xlsx / .pdf```
-- Automation Code: ```cy.js```
-- Cypress Configuration: ```.js```
+The project successfully validated core functionalities of the Automation Test Store site. The manual testing phase ensured all features worked as intended, while the Cypress automation framework improved testing speed, consistency, and reusability.
 
 ### 📌 ***References***
 
 - [📘 Cypress Documentation](https://www.cypress.io/)
-- [🌍 OrangeHRM Demo Site](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
-- [🐱 GitHub Guidence](https://github.com/git-guides)
+- [🌍 Automation Test Store Site](https://automationteststore.com/)
+- [🐱 GitHub Guidence](https://github.com/kusuma6379/Project-Automation)
 
 ### 👩‍💻 ***Author***
-Swathi Thoorpati
-Contact Me- [E-MailId](swathithoorpati03@gmail.com)
+Madavali Kusuma
+Contact Me- [E-MailId](kusumababu6379@gmail.com)
 
 ### 🌟 ***About Me***
 I am an aspiring and dedicated Quality Assurance professional with a strong foundation in manual and automation testing. Passionate about ensuring software reliability and user satisfaction, I specialize in creating comprehensive test strategies, scenarios, and automation frameworks. My expertise in Cypress, JavaScript, and testing methodologies empowers me to deliver high-quality, maintainable test solutions. I am committed to continuous learning and improving testing processes for better software experiences.
@@ -219,7 +211,7 @@ I am an aspiring and dedicated Quality Assurance professional with a strong foun
 | Approver | Role | Date |
 | -------- | -------- | -------- |
 | Shiva kumar sir | Project Manger|  24-03-2025 |
-| Anjali Madam    | Project Lead  |  24-03-2025 |
+| Anjali ma'am   | Project Lead  |  24-03-2025 |
 
  
 
